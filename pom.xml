@@ -84,7 +84,7 @@
 								<rule>
 									<element>CLASS</element>
 									<excludes>
-										<exclude>lab.nighma.timesheet.TimesheetApplication</exclude>
+										<exclude>lab.nighma.timesheet.TimeSheetApplication</exclude>
 									</excludes>
 									<limits>
 										<limit>
