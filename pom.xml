@@ -82,15 +82,20 @@
 						<configuration>
 							<rules>
 								<rule>
-									<element>BUNDLE</element>
-<!--									<excludes>-->
-<!--										<exclude>lab.nighma.timesheet.TimesheetApplication</exclude>-->
-<!--									</excludes>-->
+									<element>CLASS</element>
+									<excludes>
+										<exclude>lab.nighma.timesheet.TimesheetApplication</exclude>
+									</excludes>
 									<limits>
 										<limit>
 											<counter>LINE</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>30%</minimum>
+											<minimum>90%</minimum>
+										</limit>
+										<limit>
+											<counter>CLASS</counter>
+											<value>MISSEDCOUNT</value>
+											<maximum>0</maximum>
 										</limit>
 									</limits>
 								</rule>
