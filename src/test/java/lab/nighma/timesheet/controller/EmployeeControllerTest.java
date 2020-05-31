@@ -1,6 +1,6 @@
 package lab.nighma.timesheet.controller;
 
-import lab.nighma.timesheet.dto.EmployeeListDto;
+import lab.nighma.timesheet.dao.EmployeeRepository;
 import lab.nighma.timesheet.service.EmployeeService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -28,6 +28,9 @@ public class EmployeeControllerTest {
 
 	@MockBean
 	private EmployeeService employeeService;
+
+	@MockBean
+	private EmployeeRepository employeeRepository;
 
 	@Test
 	void getAllEmployees_ShouldReturnAllEmployees() throws Exception {
